@@ -1,10 +1,5 @@
 require 'rubygems'
 require 'sinatra'
+require 'favicate.rb'
 
-Sinatra::Application.default_options.merge!(
-	:run => false,
-	:env => ENV['RACK_ENV']
-)
-
-require 'favicate'
 run Sinatra::Application
